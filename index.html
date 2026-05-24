@@ -1,23 +1,533 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 스마트 모빌리티 파이낸스 가이드: 리스 및 장기렌트 맞춤 분석</title>
+    
+    <!-- SEO 및 메타 검색 엔진 최적화 태그 -->
+    <meta name="description" content="2026년 최신 세법 개정안과 금리 트렌드를 완벽히 반영한 테슬라 모델X, BMW 5시리즈, 그랜저, K8, 코나 등 주요 차종별 장기렌트 및 리스 가격 비교 분석. 자영업자 및 법인 사업자를 위한 맞춤형 세액 공제 전략과 신용등급 관리 가이드까지 상세히 확인해 보세요.">
+    <meta name="keywords" content="테슬라모델X장기렌트, 그랜져리스, SUV장기렌트, 자영업자차량리스, 자동차리스란, 리스가격, 중고차법인리스, 사업자차량리스, BMW5시리즈장기렌트, 장기렌트카신용등급, k8리스, 코나리스">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://leasefcars.withusrizz.com">
+    
+    <!-- Open Graph (SNS 공유 및 검색 스니펫 최적화) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2026 스마트 모빌리티 파이낸스 가이드">
+    <meta property="og:description" content="2026년 자동차 금융 트렌드. 리스와 장기렌트의 핵심 혜택, 사업자 세액 절감 전략 및 최적의 모델별 견적 제안.">
+    <meta property="og:image" content="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg">
+    <meta property="og:url" content="https://leasefcars.withusrizz.com">
+    
+    <!-- Tailwind CSS (모바일 반응형 및 현대적 스타일 구성 요소) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#FAF8F5',
+                        brandSage: '#84A98C',
+                        brandIndigo: '#6F8AB7',
+                        brandCoral: '#FF7E67',
+                        warmGray: '#F4EFEA',
+                        textDark: '#2F2E2C'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- 맞춤형 폰트 및 세부 효과 정의 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #FAF8F5;
+            color: #2F2E2C;
+            word-break: keep-all;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6F8AB7 0%, #84A98C 50%, #FF7E67 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .soft-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 12px 30px rgba(111, 138, 183, 0.05);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .soft-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 50px rgba(111, 138, 183, 0.12);
+            border-color: rgba(111, 138, 183, 0.3);
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <!-- JSON-LD 구조화 데이터: 검색 결과 내 최적화된 리치 스니펫 및 AI 에이전트 정보 수집 가속화 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "2026 스마트 모빌리티 파이낸스 가이드",
+      "description": "2026년 최신 세법 개정과 금융 시장 변동에 따른 개인/법인 사업자용 리스 및 장기렌트 가격과 조건 정밀 비교 정보 분석 시스템.",
+      "url": "https://leasefcars.withusrizz.com",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "자동차리스란",
+            "url": "https://leasefcars.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "리스가격",
+            "url": "https://leaseccarv.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "장기렌트카신용등급",
+            "url": "https://leasedcare.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "사업자차량리스",
+            "url": "https://leasedcarm.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "자영업자차량리스",
+            "url": "https://leaseccarc.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "중고차법인리스",
+            "url": "https://leasefcarf.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "테슬라모델X장기렌트",
+            "url": "https://leasefcarw.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "코나리스",
+            "url": "https://leasefcarq.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "SUV장기렌트",
+            "url": "https://leaseecard.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "BMW5시리즈장기렌트",
+            "url": "https://leaseecarf.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "그랜져리스",
+            "url": "https://leaseccarg.withusrizz.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "k8리스",
+            "url": "https://leasegcara.withusrizz.com"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="smooth-scroll">
+
+    <!-- 상단 소프트 헤더 -->
+    <header class="sticky top-0 z-50 bg-brandBg/80 backdrop-blur-md border-b border-warmGray/50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <span class="w-4 h-4 rounded-full bg-brandSage animate-pulse"></span>
+            <span class="font-extrabold text-lg tracking-wider text-textDark">MOBILITY PORTAL 2026</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-sm font-medium text-textDark/80">
+            <a href="#section-finance" class="hover:text-brandIndigo transition-colors">금융 메커니즘</a>
+            <a href="#section-business" class="hover:text-brandSage transition-colors">사업자 전략</a>
+            <a href="#section-green" class="hover:text-brandCoral transition-colors">친환경 & SUV</a>
+            <a href="#section-premium" class="hover:text-brandIndigo transition-colors">프리미엄 세단</a>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="relative overflow-hidden py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-warmGray to-brandBg">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-brandIndigo bg-brandIndigo/10 rounded-full">2026 TREND ANALYSIS REPORT</span>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-textDark mb-6">
+                소유에서 누림으로,<br>
+                <span class="gradient-text">지능형 자산 관리의 핵심</span>
+            </h1>
+            <p class="text-base md:text-xl text-textDark/70 max-w-3xl mx-auto leading-relaxed font-light mb-8">
+                2026년 급변하는 금융 조세 제도와 자동차 구매 패턴의 대전환 속에서, 가장 완벽하고 경제적인 차량 소유 대안을 제시합니다. 비용 효율성과 세금 혜택의 정점을 분석 데이터로 확인하세요.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#section-finance" class="px-8 py-4 bg-brandIndigo text-white rounded-full font-semibold shadow-lg shadow-brandIndigo/20 hover:scale-105 transition-transform">모빌리티 금융 기초</a>
+                <a href="#section-business" class="px-8 py-4 bg-brandSage text-white rounded-full font-semibold shadow-lg shadow-brandSage/20 hover:scale-105 transition-transform">비즈니스 세금 설계</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 space-y-24">
+
+        <!-- SECTION 1: 스마트 금융 솔루션 (Smart Financial Solutions) -->
+        <section id="section-finance" class="space-y-12">
+            <div class="border-l-4 border-brandIndigo pl-4">
+                <span class="text-xs font-bold text-brandIndigo tracking-widest uppercase block mb-1">Theme 01</span>
+                <h2 class="text-3xl font-extrabold text-textDark tracking-tight">지능형 자동차 금융 솔루션 분석</h2>
+                <p class="text-sm text-textDark/60 mt-1">급변하는 금리 인상기 속에서 차량 자산 가치 하락과 재무 구조 건전성을 최우선으로 고려하는 현대적 금융 분석 가이드입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: 자동차리스란 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg" alt="자동차리스 구조" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">금융의 기초</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">미래 혁신 금융, 자동차 리스의 기초 구조</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>자동차 금융의 혁신을 여는 관문인 <a href="https://leasefcars.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">자동차리스란</a> 금융회사 명의의 차량을 이용자가 원하는 기간 동안 월 사용료를 지불하며 운용하는 고도의 지능적 유통 금융 서비스 모델입니다. 2026년 기준 복잡다단한 회계 기준 상에서 차량 소유에 수반되는 각종 부채 부담과 자산 감가상각 위험을 개인이 직접 부담하는 구조에서 영구히 해방될 수 있도록 돕는 혁신적인 설계 기반을 가지고 있습니다.</p>
+                                <p>특히 단순 할부 구매에 필연적으로 따라붙는 높은 이전등록세와 공채 취득 원가 부담이 없으며, 초기 유동 자금이 철저히 제한된 현대 고소득 자영업자 및 자산 보존에 최적화된 사업가들 사이에서 재무 상태 표상의 부채 비율을 극도로 낮출 수 있는 오프밸런스(Off-Balance) 자산 운용 효과를 창출하여 큰 인기를 끌고 있는 선진형 파이낸스입니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasefcars.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>리스 핵심 가이드 확인</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: 리스가격 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/53621/pexels-photo-53621.jpeg" alt="금융 계산 및 리스 가격" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">비용 최적화</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">2026 금리 변동성 맞춤형 최적의 리스 단가 가이드</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>완벽히 고도화된 2026년 모빌리티 자산 관리 시장에서 개개인의 최적 견적을 좌우하는 핵심 척도인 <a href="https://leaseccarv.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">리스가격</a> 산정 방식은 단순한 월 납입금의 절대적인 높고 낮음을 뛰어넘어 만기 시점 보장받는 높은 잔존가치비율(Res-Value)과 연동된 최적 금리 매핑 알고리즘에 기반하고 있습니다.</p>
+                                <p>선납금의 설정 범위와 보증금의 배치를 실시간 시장 자본 조달 금리에 맞춰 유연하게 분할 설정함으로써 취득세와 취등록 부대비용의 복합적 절감이 실현됩니다. 장기간 소유할 때 기회비용 측면에서 발생하는 유동 자금의 매몰을 확실하게 방지해주므로, 다변화된 차종 옵션 세분화 속에서 리스 원가 절감 기술의 궁극적인 정답을 찾아보고 불필요하게 가중되어 있던 불합리한 수수료를 제거한 스마트 견적을 통해 비즈니스의 비용 포트폴리오를 가장 이상적으로 재조정할 기회를 놓치지 마십시오.</p>
+                            </div>
+                        </div>
+                        <a href="https://leaseccarv.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>실시간 견적 비교</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: 장기렌트카신용등급 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" alt="신용등급과 자산 지표" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">자산 건전성</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">개인 및 기업 신용 평점 보전을 위한 전략</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>금융권 대출 총량 규제와 가계 부채 및 총부채원리금상환비율(DSR) 한도의 강력한 상향 조정 여파 속에서 똑똑하게 선택해야 하는 <a href="https://leasedcare.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">장기렌트카신용등급</a> 영향 요소는 여신 금융 한도를 절대적으로 보존하려는 모든 소비자들에게 일종의 치트키로 작용하고 있습니다. 일반 리스나 할부 금융과 확연히 구분되게 장기렌트는 개인이 보유한 기대출 성격의 부채로 잡히지 않고 단순 임대 서비스 계약으로 종결됩니다.</p>
+                                <p>그 결과 1금융권의 신용 거래 한도가 타이트한 상황에서도 추가 신용 대출이나 주택 담보 대출 신청 단계 시 어떠한 마이너스 제약 조건도 유발하지 않습니다. 더불어 상대적으로 저신용 상태(KCB 및 NICE 점수 하위 구간)에 직면한 실수요자라 할지라도 자체 유연 심사 및 특별 예외 적용 기준을 탑재하고 있어 심사 문턱이 현저히 낮고 승인 장벽 완화의 이점을 완벽히 도출해 냅니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasedcare.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>신용 영향도 정밀 분석</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: 비즈니스 세무 혁신 (Business Tax & Corporate Portfolio) -->
+        <section id="section-business" class="space-y-12">
+            <div class="border-l-4 border-brandSage pl-4">
+                <span class="text-xs font-bold text-brandSage tracking-widest uppercase block mb-1">Theme 02</span>
+                <h2 class="text-3xl font-extrabold text-textDark tracking-tight">개인 및 법인 비즈니스를 위한 세금 최적화 아키텍처</h2>
+                <p class="text-sm text-textDark/60 mt-1">2026년 최신 종합소득세 및 법인세 합리화 요건을 준수하며 차량 운용 경비 처리를 완전 극대화하는 비즈니스 실전 지침입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 4: 사업자차량리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="사업자 계약 및 회의" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandSage text-white text-xs px-3 py-1.5 rounded-full font-bold">법인 및 개인 사업자</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">합리적 세액 경감의 지름길, 법인 비즈니스 금융</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>비즈니스 경영에 수반되는 고정비의 기하급수적인 누수 방지와 투명한 회계 장부 처리를 가이드하는 <a href="https://leasedcarm.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandSage font-semibold hover:underline bg-brandSage/5 px-1 rounded transition-colors">사업자차량리스</a>는 연간 지출하는 렌트/리스비와 유류비, 소모품 유지 비용을 포함하여 최대 법정 한도 한정 내에서 신속하고 확실한 경비 처리가 가능하도록 세무 프로세스를 일원화합니다.</p>
+                                <p>2026년에 신규 적용되는 법인세법에 발맞추어, 자금 유출 일정을 철저히 예측 가능하도록 플랫포밍할 수 있으며 종합소득세 한계 세율 적용 구간에 있는 최고 경영자들에게 과세표준 구간 자체를 한층 아래로 하향 조정할 수 있는 전방위적인 세법 혜택을 연쇄적으로 이끌어 냅니다. 고가의 명품 승용차 역시 장부상 복잡한 자산 처리 없이 매칭 설계가 완벽해집니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasedcarm.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandSage/10 text-brandSage rounded-2xl font-semibold hover:bg-brandSage hover:text-white transition-all">
+                            <span>법인 맞춤 세제 안내</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: 자영업자차량리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="자영업 사무 공간" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandSage text-white text-xs px-3 py-1.5 rounded-full font-bold">자영업 솔루션</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">지역 의료보험 및 재산세 복합 폭탄 예방 전략</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>자력으로 성장 가도를 달리는 고소득 프리랜서 및 개인 소상공인들이 차량 인수 시 맞닥뜨릴 수밖에 없는 건보료 인상 문제를 피하는 스마트 해법으로 <a href="https://leaseccarc.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandSage font-semibold hover:underline bg-brandSage/5 px-1 rounded transition-colors">자영업자차량리스</a> 시스템은 혁신적 대안이 됩니다. 본인 단독 명의의 고정 자산이 증액되지 않아 국민건강보험료 평가 점수가 조금도 요동치지 않습니다.</p>
+                                <p>매 분기 발생하는 성실 납부 입증 요건 강화 속에서, 번거로운 주행 일지 작성 여부와 관계없이 세법 규정에 입각한 보편적 감세 방안을 정교하게 가동시켜 세출 부하를 파격적으로 경감합니다. 동시에 무사고 경력이 꾸준히 인정되는 리스의 본연적인 보증 체계를 빌려와 개인 운전 실력을 바탕으로 보험료 할인 인센티브 요율까지 매끄럽게 가져올 수 있어 비즈니스의 안전망을 견고히 보전해 나가는 밑바탕이 되어줄 것입니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leaseccarc.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandSage/10 text-brandSage rounded-2xl font-semibold hover:bg-brandSage hover:text-white transition-all">
+                            <span>자영업 전용 혜택 조회</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6: 중고차법인리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg" alt="인증 중고차 가이드" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandSage text-white text-xs px-3 py-1.5 rounded-full font-bold">가성비 플랜</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">연식 다변화 및 초단기 감가 극대화, 법인 프리오운드 리스</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>신차 출시 후 초반 1~2개년 사이에 급격히 발생하는 살인적인 수준의 신차 초기 감가상각 비용을 전면 차단해 내는 탁월한 실용적 금융 솔루션인 <a href="https://leasefcarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandSage font-semibold hover:underline bg-brandSage/5 px-1 rounded transition-colors">중고차법인리스</a>는 최근 세법 및 녹색 법인 번호판 규정을 가장 스마트하게 우회 및 적법 관통하려는 고성능 기업 가치 창조 파트너로 급부상 중입니다.</p>
+                                <p>전체 취득 가격 원가가 대폭 다운사이징되어 있어 리스 납입 부담금이 애초에 초경량화 세팅이 가능하며, 이미 검증을 끝낸 프리미엄급 고가 하이엔드 차량 모델을 보다 합리적 가격으로 계약하여 비즈니스의 격조 높은 품격을 유지함과 동시에 짧아진 회계상 감가상각 연한으로 인해 신속한 단기 전액 비용 차감 인식이 가능해지는 기적과도 같은 세금 혜택을 완성할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasefcarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandSage/10 text-brandSage rounded-2xl font-semibold hover:bg-brandSage hover:text-white transition-all">
+                            <span>인증 중고 리스 목록</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: 친환경 EV & SUV (Eco-friendly EV & SUV Financial Roadmap) -->
+        <section id="section-green" class="space-y-12">
+            <div class="border-l-4 border-brandCoral pl-4">
+                <span class="text-xs font-bold text-brandCoral tracking-widest uppercase block mb-1">Theme 03</span>
+                <h2 class="text-3xl font-extrabold text-textDark tracking-tight">친환경 드라이빙 & 패밀리 아웃도어 모빌리티</h2>
+                <p class="text-sm text-textDark/60 mt-1">2026년 전기차 잔존가치 우려와 패밀리 라이프스타일 요구를 최적으로 융합한 저탄소·친환경 포트폴리오입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 7: 테슬라모델X장기렌트 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="테슬라 전기 SUV" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandCoral text-white text-xs px-3 py-1.5 rounded-full font-bold">전기 플래그십</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">미래지향적 팔콘 윙 테슬라 SUV 스마트 자산 운용</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>2026년 완전 자율주행 FSD 고도화 실현으로 시장의 모든 관심이 집중된 미래형 EV의 최고 정수이자 플래그십 모델 <a href="https://leasefcarw.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandCoral font-semibold hover:underline bg-brandCoral/5 px-1 rounded transition-colors">테슬라모델X장기렌트</a>는 급작스러운 연간 배터리 수명 감가 리스크와 시시각각 급락하는 중고 친환경 자동차 가격 변동 위험으로부터 리스사의 탄탄한 잔존 보장을 빌려 전면 보호받는 이상적 방식을 구현했습니다.</p>
+                                <p>전기차 충전비의 소소한 경제적 이점을 초월해 국고 및 지자체 전기차 구매 보조금 요율 축소에 유연하게 대응 가능하며, 렌탈 전용의 막강한 제휴 할인을 적용받아 계약 시작 시점부터 막대한 세금 감면은 물론 무상 충전 카드 인프라 등 렌탈 기업 전용의 프리미엄 부가 베네핏을 동시에 입어 완벽히 매력적인 비행을 경험하게 만듭니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasefcarw.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandCoral/10 text-brandCoral rounded-2xl font-semibold hover:bg-brandCoral hover:text-white transition-all">
+                            <span>테슬라 견적 계산하기</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 8: 코나리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg" alt="소형 하이브리드 SUV" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandCoral text-white text-xs px-3 py-1.5 rounded-full font-bold">도심형 콤팩트</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">탁월한 연비와 도심 모빌리티의 기준, 콤팩트 SUV 운용</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>스마트한 청년 직장인과 실용적인 도심 기반 소호 비즈니스의 영리한 자가용 역할을 충실히 해내는 하이브리드 및 전동화 최상급 라인업 <a href="https://leasefcarq.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandCoral font-semibold hover:underline bg-brandCoral/5 px-1 rounded transition-colors">코나리스</a> 프로그램은 뛰어난 정숙성, 스마트 세대의 핵심 취향을 완벽히 간파해낸 정밀 디지털 대화면 클러스터를 탑재한 탁월한 세그먼트 가성비를 아낌없이 펼쳐냅니다.</p>
+                                <p>높은 연비 대비 실속 있는 저렴한 납입료 매칭을 통해 매달 손쉬운 가계 및 사업 지출 통제가 보장되며, 콤팩트하고 뛰어난 도심 주차 편의성을 누릴 수 있습니다. 또한, 장기 계약 시 수반될 수 있는 만기 인수 및 반납의 선택권을 운전자의 자유로운 라이프 패턴의 변화 과정에 맞춰 능동적으로 변경 가능하다는 특장점으로 매력을 고조시킵니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasefcarq.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandCoral/10 text-brandCoral rounded-2xl font-semibold hover:bg-brandCoral hover:text-white transition-all">
+                            <span>코나 실시간 옵션 매치</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 9: SUV장기렌트 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg" alt="패밀리 SUV 아웃도어" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandCoral text-white text-xs px-3 py-1.5 rounded-full font-bold">아웃도어 라이프</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">가족의 안전과 일탈을 지원하는 멀티플레이어 플랫폼</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>2026년 주말 라이프의 핵심 트렌드인 주 4일 근무제 시대를 대리하여 일상과 아웃도어를 거침없이 종횡무진하는 패밀리카의 최우선 순위 <a href="https://leaseecard.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandCoral font-semibold hover:underline bg-brandCoral/5 px-1 rounded transition-colors">SUV장기렌트</a>는 쏘렌토, 싼타페, 카니발로 대변되는 대형 실내 공간감의 실용성을 매달 한치의 막힘도 없는 깔끔하고 투명한 통합 관리 요금 하나만으로 완벽하게 마주할 수 있게 돕습니다.</p>
+                                <p>특히 소모성 타이어 교체부터 각종 엔진 오일류 예방 점검 정비까지 세심히 위탁 처리해 주어, 사고 돌발 상황 속에서의 막대한 면책금 방어 효과와 함께 대가족의 듬직하고 기분 좋은 주말 야외 캠핑과 차박 모빌리티의 차원 다른 여정을 스트레스 없이 안전하게 리드합니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leaseecard.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandCoral/10 text-brandCoral rounded-2xl font-semibold hover:bg-brandCoral hover:text-white transition-all">
+                            <span>SUV 패밀리 패키지 보기</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: 하이엔드 & 프리미엄 (Premium Executive Sedan Portfolio) -->
+        <section id="section-premium" class="space-y-12">
+            <div class="border-l-4 border-brandIndigo pl-4">
+                <span class="text-xs font-bold text-brandIndigo tracking-widest uppercase block mb-1">Theme 04</span>
+                <h2 class="text-3xl font-extrabold text-textDark tracking-tight">하이엔드 럭셔리 익스큐티브 세단 컬렉션</h2>
+                <p class="text-sm text-textDark/60 mt-1">사회적 성공의 지표이자 완벽한 드라이빙 다이내믹스를 선사하는 비즈니스 대표 세단들의 전방위 금융 솔루션입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 10: BMW5시리즈장기렌트 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg" alt="BMW 5시리즈" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">글로벌 비즈니스</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">글로벌 비즈니스 클래스의 기준, 저소음 세단 소유 전략</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>달리는 순수 테크놀로지 허브이자 강력한 파워트레인을 고도로 탑재하여 기업 핵심 임원진들의 부동의 아이콘으로 선망받는 <a href="https://leaseecarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">BMW5시리즈장기렌트</a> 상품은 마일드 하이브리드(MHEV) 파워트레인의 눈부신 부드러움과 환상적인 세금 공제를 한 손에 모두 쥘 수 있게 설계되어 있습니다.</p>
+                                <p>럭셔리 수입차의 비싼 부품 수급 및 잔고장 무상 A/S 기간 만료 시점에 도래할 중고 매매 애로사항을 렌트사의 완벽한 원스톱 관리 대행으로 무리 없이 해결하며, 기업 경영인의 시간당 기회비용을 낭비하지 않는 최적의 도심 밀착형 비즈니스 파트너로서 최고의 사회적 명성과 실질적 경제성이라는 가치 모두를 매력적으로 고취시킵니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leaseecarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>BMW 최적 파이낸스 플랜</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 11: 그랜져리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/977003/pexels-photo-977003.jpeg" alt="현대 그랜저 세단" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">국민 플래그십</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">전통과 품격을 관통하는 성공의 아이콘, 국산 대표 세단 리스</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>국내 준대형 세단 시장의 절대 왕좌를 지켜온 플래그십 차량의 독보적인 자부심 <a href="https://leaseccarg.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">그랜져리스</a>는 대중적인 범용성과 쇼퍼 드리븐의 품위 격식을 완벽히 매칭하려는 가장 안정적이고 세련된 비즈니스 파이낸스 프로그램입니다.</p>
+                                <p>고급 리무진 버금가는 무중력 안락 시트 인테리어와 수입 차량과 대등한 자율 안전 운전 보조 기능들의 수혜를 저렴한 국산차 전용 특판 리스 요율로 확보할 수 있으며, 만기 반납 시 감가 페널티를 극적으로 제로화하는 전례 없는 잔존 가격 세팅 기술을 통하여 월 리스료 지출 비용의 획기적 축소와 절세 효율의 무한한 시너지 극대화를 현실로 목격하게 합니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leaseccarg.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>그랜저 특별 딜 확인</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 12: k8리스 -->
+                <div class="soft-card rounded-3xl overflow-hidden flex flex-col h-full">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="기아 K8 하이브리드" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-brandIndigo text-white text-xs px-3 py-1.5 rounded-full font-bold">스포티 익스큐티브</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-textDark mb-3">스포티한 세련미와 혁신적 공간 연출, 럭셔리 라인업</h3>
+                            <div class="text-sm text-textDark/70 leading-relaxed space-y-3 mb-6">
+                                <p>기존 보수적인 비즈니스 세단들의 고정된 디자인 철학을 위트 있게 파괴하고, 독창적인 다이아몬드 패턴 그릴과 우아한 패스트백 라인을 완성하여 차세대 비즈니스 리더들을 사로잡은 <a href="https://leasegcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-brandIndigo font-semibold hover:underline bg-brandIndigo/5 px-1 rounded transition-colors">k8리스</a> 상품은 동급 최대 휠베이스가 선사하는 고해상도 리빙룸 수준의 쾌적함과 고연비 하이브리드 엔진의 압도적인 지출 방어력 시너지를 정교히 유도합니다.</p>
+                                <p>수입차 부럽지 않은 가성비 지향 견적과 즉시 출고 가능한 유통 재고 선점 리스트를 실시간으로 빠르게 연계함으로써, 길고 긴 신차 출고 대기 시간 없이 당장 오늘부터 비즈니스의 강력한 파워 엔진을 가속할 수 있는 탁월하고 슬기로운 모빌리티 경험을 정직하게 제안합니다.</p>
+                            </div>
+                        </div>
+                        <a href="https://leasegcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="inline-flex justify-between items-center w-full px-5 py-3.5 bg-brandIndigo/10 text-brandIndigo rounded-2xl font-semibold hover:bg-brandIndigo hover:text-white transition-all">
+                            <span>K8 맞춤 딜러 확인</span>
+                            <span class="text-lg">➔</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-  </body>
+
+    <!-- 푸터 영역 -->
+    <footer class="bg-textDark text-white/80 py-16 px-6 md:px-12 mt-24 border-t border-brandSage/10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h4 class="text-white font-extrabold text-lg tracking-wider mb-4">MOBILITY FINANCE 2026</h4>
+                <p class="text-xs text-white/50 leading-relaxed">
+                    본 포털은 2026년 최신 세법 개정 기준 및 최적의 금융 시장 동향을 기반으로 설계되었습니다. 각 파트너십 채널의 연계를 통한 효율적인 차량 리스 및 장기렌트 포트폴리오 최적화로 소중한 세무 혜택과 재무 건전성을 확보하십시오.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm tracking-wider mb-4">바로가기 링크 리스트</h4>
+                <div class="grid grid-cols-2 gap-2 text-xs text-white/60">
+                    <a href="https://leasefcars.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">자동차리스란</a>
+                    <a href="https://leaseccarv.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">리스가격</a>
+                    <a href="https://leasedcare.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">장기렌트 신용등급</a>
+                    <a href="https://leasedcarm.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">사업자차량리스</a>
+                    <a href="https://leaseccarc.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">자영업자차량리스</a>
+                    <a href="https://leasefcarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">중고차법인리스</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm tracking-wider mb-4">프리미엄 세그먼트 바로가기</h4>
+                <div class="grid grid-cols-2 gap-2 text-xs text-white/60">
+                    <a href="https://leasefcarw.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">테슬라모델X</a>
+                    <a href="https://leasefcarq.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">코나리스</a>
+                    <a href="https://leaseecard.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">SUV장기렌트</a>
+                    <a href="https://leaseecarf.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">BMW5시리즈</a>
+                    <a href="https://leaseccarg.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">그랜져리스</a>
+                    <a href="https://leasegcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:text-white hover:underline">k8리스</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-white/40">&copy; 2026 Mobility Finance Portal Inc. All rights reserved.</p>
+            <p class="text-xs text-white/30">본 웹사이트에 사용된 이미지는 pexels.com의 상업적 무료 라이선스를 준수하며 중복 없이 엄격히 매칭되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
